@@ -28,9 +28,9 @@ describe "Artist" do
     describe "#add_song" do 
       it "takes in an argument of a song and adds that song to the artist's collection and tells the song that it belongs to that artist" do 
         hello = Song.new("Hello")
-        adele.add_song(hello)
-        expect(adele.songs).to include(hello)
-        expect(hello.artist).to eq(adele)
+        adele.add_song(hello) #set-up
+        expect(adele.songs).to include(hello) #description, where it is found when done
+        expect(hello.artist).to eq(adele) #execution, the output
       end
     end
 
